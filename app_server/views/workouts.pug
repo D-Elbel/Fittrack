@@ -12,9 +12,25 @@ block content
       li.nav-item 
         a(href="/").nav-link Register
   
+  .row
+    .col-xl-3
+      select.form-select    
+        option Please Select a Muscle Group
+        option Biceps 
+        option Brachialis 
+        option Triceps 
+        option Quadriceps 
+        option Deltoids 
+        option Hamstrings 
 
-
+    .col-xl-4 
+        input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+    .col-xl-1
+     button.btn.btn-primary Search
+    .col-xl-4
+     
   each workout in workouts
+   
    .card.workoutCard
     .card-body 
       .row
@@ -22,7 +38,7 @@ block content
           h5.card-title= workout.title
         .col-lg-4.muscleList
           each tag in workout.tags
-            .badge.badge-secondary= tag
+            .badge.badge-primary= tag
       .row
        each exercise in workout.exercises
         .col-lg-4

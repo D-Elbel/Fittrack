@@ -6,6 +6,7 @@ const validateUser = function(req, res){
 
 const registerUser = function(req, res){
     
+    
 };
 
 module.exports = {

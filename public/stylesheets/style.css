@@ -1,11 +1,18 @@
+body{
+    background-color: #292929;
+    color: whitesmoke;
+}
 .badge{
     padding:0.5rem;
-    margin-left: 1rem;;
+    margin-left: 1rem;
+    background-color: #007bff;
+    border: 0px;
 }
 
 .container{
     padding: 0;
     margin-bottom: 1rem;
+    background-color: #292929;
 }
 
 .muscleList{
@@ -36,14 +43,18 @@ td{
     
 }
 
+.exTitle{
+    font-weight: bold;
+}
+
 input{
     margin-top: 0.4rem;
 }
+
 .exerciseComponent{
     margin-top: 1rem;
-    background-color: gainsboro;
-    border-radius: 4px;
-   
+    background-color: #464646;
+    border-radius: 4px;   
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     text-align: center;
@@ -52,6 +63,7 @@ input{
 .pageLayout{
     display: flex;
     justify-content: space-around;
+    background-color: #292929;
 }
 
 .fieldLabel{
@@ -61,6 +73,15 @@ input{
 
 p{
    padding:0.2rem;
+}
+
+.card{
+    background-color: #222222;
+    border: 1px solid whitesmoke;
+}
+
+.card-title{
+    font-weight: bold;
 }
 
 .workoutCard{
@@ -88,4 +109,20 @@ footer{
     margin-top: 2rem;
     position: absolute;
     bottom: 1rem;
+}
+
+select{
+    background-color:#464646;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+option{
+    background-color: 222222;
+}
+
+.searchBar{
+    width: 100px;
 }

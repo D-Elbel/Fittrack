@@ -1,4 +1,3 @@
-/* GET home page */
 const workouts = function (req, res) {
   res.render("workouts", {
     workouts:[ 
@@ -9,7 +8,6 @@ const workouts = function (req, res) {
           {name: "Hammer Curls",sets: 3,reps: 3,resistance: 17.5,rest: 90,},
           { name: "Bench Rows", sets: 3, reps: 8, resistance: 30, rest: 120 },
           { name: "Shrugs", sets: 3, reps: 25, resistance: 32.5, rest: 120 },
-          { name: "Curls", sets: 3, reps: 12, resistance: 15, rest: 90 },
         ]},
 
         {title: "Chest & Triceps",
