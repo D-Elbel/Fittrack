@@ -1,5 +1,5 @@
 const workouts = function (req, res) {
-  res.render("workouts", {
+  res.render("workouts", {title: "Workouts",
     workouts:[ 
       
         {title: "Back & Biceps",

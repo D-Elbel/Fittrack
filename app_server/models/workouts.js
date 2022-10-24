@@ -6,11 +6,11 @@ const workoutSchema = new mongoose.Schema({
   exercises: {
     type: [
       {
-        name: String,
-        sets: Number,
-        reps: Number,
-        resistance: Number,
-        rest: Number,
+        name: {type: String},
+        sets: {type: Number, min: 0},
+        reps: {type: Number, min: 0},
+        resistance: {type: Number, min: 0},
+        rest: {type: Number, min: 30},
       },
     ],
     required: true,

@@ -1,4 +1,3 @@
-/* GET home page */
 const register = function (req, res) {
   res.render("register", { title: "Registration" });
 };
