@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
-const processEnv = require('../../process.env')
-
-const dbURI = processEnv.URI;
+require('dotenv').config(); 
+const dbURI = process.env.DB_URI;
 try {
    
 mongoose.connect(
     dbURI,
     { useNewUrlParser: true, useUnifiedTopology: true },
-    () => console.log(" Mongoose is connected")
+    () => console.log(" Mongoose is connected" + dbURI)
 	);
 }
  catch (e) {

@@ -1,10 +1,12 @@
-require('./app_server/models/workouts');
-require('./app_server/models/users');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+require('./app_api/models/db');
+require('./app_api/models/users');
+require('./app_api/models/workouts');
 const apiRoutes = require('./app_api/routes/index');
 const index = require('./app_server/routes/index');
 

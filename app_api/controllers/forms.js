@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Location = mongoose.model('User');
+const user = mongoose.model('User');
 const validateUser = function(req, res){
 
 };

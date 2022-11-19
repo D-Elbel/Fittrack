@@ -127,3 +127,31 @@ option{
     width: 100px;
 }
 
+footer > .row > .col-12{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.actionBtn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-top:2rem;
+
+}
+
+.formTitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin-top: 1rem;
+}
+
