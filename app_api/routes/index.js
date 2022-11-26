@@ -5,6 +5,14 @@ const ctrlForms = require('../controllers/forms');
 const ctrlData = require('../controllers/data');
 
 //forms
+router
+    .route('/login')
+    .get(ctrlForms.validateUser);
+
+router  
+    .route('/registration')
+    .post(ctrlForms.registerUser);
+
 
 //data
 router
