@@ -1,6 +1,7 @@
 extends layout 
 
 block content
+ script(src='/javascripts/register.js')
  .container
   .nav.nav-pills.nav-fill 
         li.nav-item 
@@ -16,26 +17,26 @@ block content
     .card
         .form-group.col-lg-12          
          
-         .col-lg-12 
+          .col-lg-12 
             p.formTitle Register Now                   
               table                
                   tr 
                   td First Name
                   td
-                    input.form-control(type='text', placeholder='Enter First Name')
+                    input.form-control#firstname(type='text', name="firstname", placeholder='Enter First Name')
                   tr 
                   td Last Name
                   td
-                    inputform-control(type='text',placeholder='Enter Last Name')
+                    input.form-control#lastname(type='text',name="lastname",placeholder='Enter Last Name')
                   tr 
                   td Email
                   td
-                    input.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Email Address')
+                    input.form-control#email(type='text', name="email",aria-describedby='emailHelp', placeholder='Enter Email Address')
                   tr 
                   td Password
                   td
-                    input.form-control(type='password', placeholder='Enter Password')                           
+                    input.form-control#password(type='password', name="password",placeholder='Enter Password')                           
                     
-            button.btn.btn-primary.actionBtn(type='submit') Register Account
+            button.btn.btn-primary.actionBtn(onclick="register()") Register Account
           
         a(href="login" style="text-align:center").link Already have an account? Login here

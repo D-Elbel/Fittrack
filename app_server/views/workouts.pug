@@ -28,32 +28,12 @@ block content
     .col-xl-1
      button.btn.btn-primary Search
     .col-xl-4
-     
-  each workout in workouts   
-   .card.workoutCard
-    .card-body 
-      .row
-        .col-lg-8
-          h5.card-title= workout.title
-        .col-lg-4.muscleList
-          each tag in workout.tags
-            .badge.badge-primary= tag
-      .row
-       each exercise in workout.exercises
-        .col-lg-4
-          .card.exerciseCard
-            .row
-              .col-lg-12
-                p.exerciseComponent=exercise.name
-            .row            
-              p.exerciseComponent=exercise.sets
-                span.fieldLabel | Sets           
-              i.fas.fa-times           
-              p.exerciseComponent=exercise.reps
-                span.fieldLabel | Reps
-              p.exerciseComponent=exercise.rest
-                span.fieldLabel | KG
-              p.exerciseComponent=exercise.resistance
-                span.fieldLabel | Seconds
 
+    app-workout-list.workoutList Loading 
+
+block scripts
+  script(src='/build/main.8440081d2ba94cc8.js')
+  script(src='/build/polyfills.29b543df7c8b3c53.js')
+  script(src='/build/runtime.f630a5a1053927e0.js')
+  
         

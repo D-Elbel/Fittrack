@@ -6,6 +6,6 @@ const ctrlData = require("../controllers/data");
 
 router.get("/", ctrlForms.register);
 router.get("/login", ctrlForms.login);
-router.get("/workouts", ctrlData.workouts);
+router.get("/workouts", ctrlData.workoutsList);
 
 module.exports = router;
