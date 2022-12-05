@@ -18,6 +18,7 @@ block content
         .form-group.col-lg-12          
          
           .col-lg-12 
+           form(role='form', action="/api/register",method="post", style='max-width: 300px;')
             p.formTitle Register Now                   
               table                
                   tr 
@@ -31,12 +32,12 @@ block content
                   tr 
                   td Email
                   td
-                    input.form-control#email(type='text', name="email",aria-describedby='emailHelp', placeholder='Enter Email Address')
+                    input.form-control#email(type='text', name="username",aria-describedby='emailHelp', placeholder='Enter Email Address')
                   tr 
                   td Password
                   td
                     input.form-control#password(type='password', name="password",placeholder='Enter Password')                           
                     
-            button.btn.btn-primary.actionBtn(onclick="register()") Register Account
+              button.btn.btn-primary.actionBtn(type="submit") Register Account
           
         a(href="login" style="text-align:center").link Already have an account? Login here

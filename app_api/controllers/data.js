@@ -10,7 +10,7 @@ const getWorkouts = function(req, res) {
             res	
             .status(404) 
             .json({	
-                "message": "Email not found"
+                "message": "No workouts found"
             });	 
             return;
         } else if (err) {

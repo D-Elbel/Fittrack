@@ -15,21 +15,20 @@ block content
   .pageLayout
     .card
         .form-group.col-lg-12    
-
-          .col-lg-12   
-            p.formTitle Login Now                     
-              table 
-                  tr 
-                  td Email
-                  td
-                    input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Email')
-                  tr 
-                  td Password
-                  td
-                    input#exampleInputEmail1.form-control(type='text', placeholder='Enter Password')
-                                          
-           
-          button.btn.btn-primary.actionBtn(type='submit') Login     
+          form(role='form', action="/api/login",method="post", style='max-width: 300px;')
+            .col-lg-12   
+              p.formTitle Login Now                     
+                table 
+                    tr 
+                    td Email
+                    td
+                      input#exampleInputEmail1.form-control(type='text', name="username", aria-describedby='emailHelp', placeholder='Enter Email')
+                    tr 
+                    td Password
+                    td
+                      input#exampleInputEmail1.form-control(type='password', name="password", placeholder='Enter Password')                                         
+            
+              button.btn.btn-primary.actionBtn(type='submit') Login     
                 
         a(href="/" style="text-align:center").link Don't have an account? Register here
 
