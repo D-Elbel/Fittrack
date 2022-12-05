@@ -22,8 +22,7 @@ const getWorkouts = function(req, res) {
         res		
             .status(200)
             .json(workouts);
-        });
- 
+        }); 
 }
 
 const getWorkoutsFiltered = function(req, res){

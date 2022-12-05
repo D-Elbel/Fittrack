@@ -24,9 +24,7 @@ var certificate = fs.readFileSync('./sslcert/cert.pem', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 var app = express();
-var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
-httpServer.listen(8000);
 httpsServer.listen(443);
 
 

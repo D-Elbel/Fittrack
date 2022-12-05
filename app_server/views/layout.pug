@@ -10,11 +10,22 @@ html
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==", crossorigin="anonymous", referrerpolicy="no-referrer")
     link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/javascripts/lightswitch.js')
+    
     
   body    
     .container
-      block content     
+
+      .nav.nav-pills.nav-fill 
+            li.nav-item 
+              a(href="workouts").nav-link#workoutLink Workouts
+            li.nav-item
+            li.nav-item
+            li.nav-item 
+              a(href="login").nav-link#loginLink Login         
+            li.nav-item 
+              a(href="/").nav-link#registerLink Register
+    
+    block content     
 
     footer
         .row
@@ -26,5 +37,7 @@ html
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
     script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/lightswitch.js')
+    script(src='/javascripts/navigation.js')
 
     block scripts

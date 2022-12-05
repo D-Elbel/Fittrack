@@ -1,38 +1,11 @@
 extends layout
 
 block content
-  .container
-    .nav.nav-pills.nav-fill 
-      li.nav-item 
-        a(href="workouts").nav-link.active Workouts
-      li.nav-item
-      li.nav-item
-      li.nav-item 
-        a(href="login").nav-link Login         
-      li.nav-item 
-        a(href="/").nav-link Register
-  
-  .row
-    .col-xl-3
-      select.form-select    
-        option Please Select a Muscle Group
-        option Biceps 
-        option Brachialis 
-        option Triceps 
-        option Quadriceps 
-        option Deltoids 
-        option Hamstrings 
-
-    .col-xl-4 
-        input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-    .col-xl-1
-     button.btn.btn-primary Search
-    .col-xl-4
 
     app-workout-list.workoutList Loading 
 
 block scripts
-  script(src='/build/main.8440081d2ba94cc8.js')
+  script(src='/build/main.0623d012b5d4d022.js')
   script(src='/build/polyfills.29b543df7c8b3c53.js')
   script(src='/build/runtime.f630a5a1053927e0.js')
   
