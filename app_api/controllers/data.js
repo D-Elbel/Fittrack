@@ -26,7 +26,7 @@ const getWorkouts = function(req, res) {
 }
 
 const getWorkoutsFiltered = function(req, res){
-        if (req.params) {
+  if (req.params && req.params.title) {
             workout
             .find({title: req.params.title})
             .exec((err, workout) => {
@@ -34,7 +34,7 @@ const getWorkoutsFiltered = function(req, res){
                 res	
                   .status(404) 
                   .json({	
-                    "message": "Email not found"
+                    "message": "Workout title not found"
                   });	 
                 return;
               } else if (err) {
@@ -47,9 +47,13 @@ const getWorkoutsFiltered = function(req, res){
                 .status(200)
                 .json(workout);
             });
-    
-            
-    } 
+          } else {
+            res	
+              .status(404) 
+              .json({	
+                "message": "No title in request"
+              });	 
+          }
 }
 
 

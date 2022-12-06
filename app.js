@@ -24,8 +24,8 @@ var certificate = fs.readFileSync('./sslcert/cert.pem', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 var app = express();
-var httpsServer = https.createServer(credentials, app);
-httpsServer.listen(443);
+//var httpsServer = https.createServer(credentials, app);
+//httpsServer.listen(443);
 
 
 // view engine setup

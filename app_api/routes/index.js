@@ -35,7 +35,7 @@ router
     .get(ctrlData.getWorkouts)
 
 router
-    .route('/data/:filter')
+    .route('/data/filtered/:title')
     .get(ctrlData.getWorkoutsFiltered)
 
 
